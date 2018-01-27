@@ -74,6 +74,11 @@ flex-2-col {
 .box a:first-child img{
     border: 2px solid silver;
 }
+/*task 6*/
+.carousel-item:first-child h2{
+    color: gainsboro;
+    letter-spacing: 5px;
+}
 /*task 11*/
 .tm-main-nav li+li {
     border-top: 1px solid #ccc;
