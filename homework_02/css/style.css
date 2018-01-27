@@ -44,10 +44,31 @@ write your code here
         color: #1015FF;
     }
     }
+/*task 2*/
+@media screen {
+    li.box{
+        border-bottom: none !important;
+        border-right: none !important;
+    }
+    li.box:ntn-child(3n) {
+        border-right: 1px solid silver !important;
+    }
+    li.box:nth-last-child(-n+3) {
+        border-right: 1px solid silver !important; 
+    }
+
+
 /*task 3*/
 p::first-letter {
     color: #76cdd7;
     font-size: 30px;
+}
+/*task 4*/
+.tm-sidebar,section {
+    box-shadow: 1px 1px 9px 6px #C2C2C2;
+}
+flex-2-col {
+    border: none;
 }
 /*task 5*/
 .box a:first-child img{
@@ -64,4 +85,5 @@ p::first-letter {
 }
 .submit-btn {
     color: #ff0000;
+}
 }
