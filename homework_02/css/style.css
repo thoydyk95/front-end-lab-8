@@ -79,6 +79,10 @@ flex-2-col {
     color: gainsboro;
     letter-spacing: 5px;
 }
+/*task 7*/
+h2+p {
+    font-style: italic;
+}
 /*task 11*/
 .tm-main-nav li+li {
     border-top: 1px solid #ccc;
