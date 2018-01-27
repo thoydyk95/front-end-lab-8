@@ -12,25 +12,56 @@ a:focus{color:#666;outline:0}ul{padding:0;margin:0}body{background-color:#f2f2f2
 write your code here
 
 */
-
+/*task 1*/
 @media print { 
     .tm-sidebar {
         display: none;
     }
+    section:nth-child(n+3){
+        display: none;
+    }
+    .boxes {
+        display: none;
+    }
     .tm-main-content {
-        margin-left: 0;
+        margin-left: 0px;
     }
-    .tm-content-box .flex-2-col {
+    .tm-banner {
+        height: 250px;
+    }
+    .tm-banner-inner {
+        height: 200px;
+    }
+    .flex-2-col {
         display: flex;
-        flex-direction: column;
+        flex-direction:column;
     }
+    .tm-team-description-container {
+        max-width: 550px;
+        padding: 0;
+    }
+    h2.tm-section-title {
+        color: #1015FF;
+    }
+    }
+/*task 3*/
+p::first-letter {
+    color: #76cdd7;
+    font-size: 30px;
 }
-@media screen and (max-width: 1140px), (max-height: 635px) {}
-.section.blocks div.pad, section.blocks div.tm-content-box {
-box-shadow: 0px 0px 10px rgba(0,0,0,0.55);
+/*task 5*/
+.box a:first-child img{
+    border: 2px solid silver;
+}
+/*task 11*/
+.tm-main-nav li+li {
+    border-top: 1px solid #ccc;
 }
 
 /*task 12*/
 .contact-form input[type="text"]{
     color:red;
+}
+.submit-btn {
+    color: #ff0000;
 }
