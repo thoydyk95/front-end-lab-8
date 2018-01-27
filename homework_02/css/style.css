@@ -12,6 +12,7 @@ a:focus{color:#666;outline:0}ul{padding:0;margin:0}body{background-color:#f2f2f2
 write your code here
 
 */
+
 @media print { 
     .tm-sidebar {
         display: none;
@@ -23,4 +24,13 @@ write your code here
         display: flex;
         flex-direction: column;
     }
+}
+@media screen and (max-width: 1140px), (max-height: 635px) {}
+.section.blocks div.pad, section.blocks div.tm-content-box {
+box-shadow: 0px 0px 10px rgba(0,0,0,0.55);
+}
+
+/*task 12*/
+.contact-form input[type="text"]{
+    color:red;
 }
