@@ -149,3 +149,44 @@ section:nth-child(3) li:first-child a:after, section:nth-child(3) li:nth-child(3
     color: #ff0000;
 }
 }
+/* task 13 */
+
+ @media screen and (max-width: 1140px),(max-height: 835px){
+    
+    .container {
+       margin: 0px; 
+    }
+    
+    .tm-sidebar{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    
+    
+}
+
+   .tm-sidebar ul{
+   display: flex;
+   }
+   .tm-sidebar li{
+   padding: 2px 0;
+   border-bottom: none;
+}
+   .tm-sidebar a{
+    padding: 2px;
+}
+    .tm-main-nav {
+    padding-top: 0;
+	padding-bottom: 0;
+}
+
+    .tm-main-nav li+li {
+	border:none;
+}
+    .tm-main-content {
+    margin-top: 50px;
+    z-index: 5;
+}
+
+}
