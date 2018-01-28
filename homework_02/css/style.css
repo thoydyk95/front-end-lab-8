@@ -50,7 +50,7 @@ write your code here
         border-bottom: none !important;
         border-right: none !important;
     }
-    li.box:ntn-child(3n) {
+    li.box:ntn-child(add) {
         border-right: 1px solid silver !important;
     }
     li.box:nth-last-child(-n+3) {
@@ -83,6 +83,15 @@ flex-2-col {
 h2+p {
     font-style: italic;
 }
+/*task 8*/
+section:nth-child(2) p {
+    text-indent: 20px;
+    line-height: 30px;
+}
+/*task 9*/
+
+/*task 10*/
+
 /*task 11*/
 .tm-main-nav li+li {
     border-top: 1px solid #ccc;
