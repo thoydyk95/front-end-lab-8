@@ -177,7 +177,9 @@ write your code here
 @media screen and (max-width: 1140px),(max-height: 835px) {
     .container {
         display: flex;
-        justify-content: center;
+        justify-content:center;
+        margin-left: 0;
+        
     }
 
     .tm-sidebar {
