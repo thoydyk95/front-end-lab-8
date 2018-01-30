@@ -1,0 +1,106 @@
+body {
+  width: 960px;
+  margin: 0 auto;
+  background: #dcbb9a;
+  padding: 15px 0;
+  box-sizing: border-box; }
+
+#content {
+  background: #fff;
+  padding: 15px; }
+  #content h1 {
+    color: #893c00;
+    font-size: 30px;
+    text-align: center;
+    padding: 0 0 15px; }
+  #content h2 {
+    color: #893c00;
+    font-size: 25px; }
+  #content img {
+    border: 2px solid #893c00;
+    padding: 2px; }
+  #content .img-left {
+    float: left;
+    margin: 0 15px 15px 0; }
+  #content .img-right {
+    float: right;
+    margin: 0 0 15px 15px; }
+  #content p {
+    color: #000;
+    font-size: 16px; }
+  #content .brief {
+    background: #fadcba;
+    width: 45%;
+    display: inline-block;
+    float: left;
+    margin: 0 15px 15px 0;
+    padding: 15px;
+    box-sizing: border-box; }
+  #content a {
+    color: #3d70a1;
+    text-decoration: underline;
+    transition: color .3s;
+    display: block; }
+    #content a:hover {
+      transition: color .3s;
+      color: #0280f9; }
+  #content table {
+    border-collapse: collapse;
+    background: #fff; }
+    #content table th {
+      background: #e0e0e0;
+      text-transform: uppercase;
+      padding: 10px 15px;
+      text-align: left;
+      font-weight: 500; }
+    #content table caption {
+      text-align: right; }
+    #content table tr + tr {
+      border-bottom: 1px solid #e0e0e0; }
+    #content table tr td {
+      padding: 10px 15px; }
+  #content .contacts fieldset {
+    border: none;
+    padding: 10px 0; }
+  #content .contacts .form-element {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px; }
+  #content .contacts label {
+    display: block;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    color: #808080; }
+  #content .contacts input {
+    border: 1px solid #e0e0e0;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box; }
+    #content .contacts input::-webkit-input-placeholder {
+      color: #808080; }
+    #content .contacts input::-moz-placeholder {
+      color: #808080; }
+    #content .contacts input:-webkit-input-placeholder {
+      color: #808080; }
+    #content .contacts input:-moz-placeholder {
+      color: #808080; }
+  #content .contacts textarea {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #e0e0e0;
+    color: #808080;
+    padding: 15px;
+    box-sizing: border-box; }
+  #content .contacts button {
+    background: transparent;
+    border: 1px solid #3d70a1;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    color: #3d70a1;
+    font-size: 20px;
+    transition: color .3s;
+    cursor: pointer; }
+    #content .contacts button:hover {
+      transition: color .3s;
+      background: #3d70a1;
+      color: #fff; }

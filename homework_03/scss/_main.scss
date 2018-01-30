@@ -1,0 +1,195 @@
+$bgcol: null !default;
+$content-bg: null !default;
+$link-hover: null !default;
+$textcol: null !default;
+$maintitlecol: null !default;
+$brief-bg: null !default;
+$table-bg: null !default;
+$linkcol: null !default;
+$contact-title-bg: null !default;
+$labelcol: null !default;
+$brief-w: null !default;
+
+@mixin title {
+	h2 {
+		color: $maintitlecol;
+		font-size: 25px;
+	}
+}
+
+@mixin main-title {
+	h1 {
+		color: $maintitlecol;
+		font-size: 30px;
+		text-align: center;
+		padding: 0 0 15px;
+	}
+}
+
+@mixin img-border {
+	img {
+		border: 2px solid $img-border;
+    padding: 2px;
+	}
+}
+
+@mixin left-img {
+	.img-left {
+		float: left;
+		margin: 0 15px 15px 0;
+	}
+}
+
+@mixin right-img {
+	.img-right {
+		float: right;
+		margin: 0 0 15px 15px;
+	}
+}
+
+@mixin brief {
+	.brief {
+		background: $brief-bg;
+    width: $brief-w;
+    display: inline-block;
+    float: left;
+    margin: 0 15px 15px 0;
+    padding: 15px;
+    box-sizing: border-box;
+	}
+}
+
+@mixin text {
+	p {
+		color: $textcol;
+		font-size: 16px;
+	}
+}
+
+@mixin table-title {
+	th {
+		background: $contact-title-bg;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    text-align: left;
+    font-weight: 500;
+	}
+}
+@mixin button {
+	button {
+    background: transparent;
+    border: 1px solid $linkcol;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    color: $linkcol;
+    font-size: 20px;
+    transition: color .3s;
+    cursor: pointer;
+
+    &:hover {
+			transition: color .3s;
+			background: $linkcol;
+			color: $content-bg;
+    }
+	}
+}
+
+body {
+  width: 960px;
+  margin: 0 auto;
+  background: $bgcol;
+  padding: 15px 0;
+  box-sizing: border-box;
+}
+
+#content {
+	background: $content-bg;
+	padding: 15px;
+
+	@include main-title;
+	@include title;
+	@include img-border;
+	@include left-img;
+	@include right-img;
+	@include text;
+	@include brief;
+
+	a {
+		color: $linkcol;
+		text-decoration: underline;
+		transition: color .3s;
+		display: block;
+
+		&:hover {
+			transition: color .3s;
+			color: $link-hover;
+		}
+	}
+
+	table {
+		border-collapse: collapse;
+		background: $table-bg;
+
+		@include table-title;
+
+		caption {
+			text-align: right;
+		}
+		tr {
+
+			&+tr {
+				border-bottom: 1px solid $contact-title-bg;
+			}
+
+			td {
+				padding: 10px 15px;
+			}
+		}
+	}
+
+	.contacts {
+		fieldset {
+			border: none;
+			padding: 10px 0;
+		}
+		.form-element {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 20px;
+		}
+		label {
+			display: block;
+	    margin-bottom: 5px;
+	    text-transform: uppercase;
+	    color: $labelcol;
+		}
+		input {
+			border: 1px solid $input-border;
+			padding: 5px;
+			width: 100%;
+	    box-sizing: border-box;
+
+			&::-webkit-input-placeholder {
+				color: $labelcol;
+			}
+			&::-moz-placeholder {
+				color: $labelcol;
+			}
+			&:-webkit-input-placeholder {
+				color: $labelcol;
+			}
+			&:-moz-placeholder {
+				color: $labelcol;
+			}
+		}
+		textarea {
+	    width: 100%;
+	    height: 200px;
+	    border: 1px solid $input-border;
+	    color: $labelcol;
+      padding: 15px;
+	    box-sizing: border-box;
+		}
+		@include button;
+	}
+}
