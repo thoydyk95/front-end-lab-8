@@ -1,0 +1,19 @@
+body {
+    max-width: 1500px;
+	margin: 0 auto;
+	padding: 0;
+	background-color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+}
+.container {
+  width: 1500px;
+  margin: 0 auto;
+}
+.container header {
+    background-image: url(../img/apples.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 150px;
+    height: 740px;
+}
