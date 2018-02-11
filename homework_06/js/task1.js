@@ -16,21 +16,20 @@ window.onload = function() {
     inspectType();
 
     function typeTr() {
-        if (a == b && b == c && a == c) {
-            console.log('Type of triangles - "Equilateral".');
-        } else if (a == b && a != c || a == c && a != b || b == c && b != a) {
-            console.log('Type of triangles - "Isosceles".');
-        } else if (a != b != c) {
-            console.log('Type of triangles - "Scalene".');
+        if (s > 0) {
+            if (a == b && b == c && a == c) {
+                console.log('Type of triangles - "Equilateral", and square is ' + s.toFixed(2));
+            } else if (a == b && a != c || a == c && a != b || b == c && b != a) {
+                console.log('Type of triangles - "Isosceles", and square is ' + s.toFixed(2));
+            } else if (a != b != c) {
+                console.log('Type of triangles - "Scalene", and square is ' + s.toFixed(2));
+            }
+            if (teoremPifag) {
+                console.log('Type of triangle - "Right triangle", and square is ' + s.toFixed(2));
+            }
+        } else {
+            console.log('Incorrect data');
         }
-        if (teoremPifag) {
-            console.log('Type of triangle - "Right triangle".');
-        }
-    }
-    if (s > 0) {
-        console.log('Square is ' + s.toFixed(2));
-    } else {
-        console.log('Incorrect data');
     }
 
 }
