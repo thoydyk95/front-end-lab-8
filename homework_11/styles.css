@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(./material-icons/MaterialIcons-Regular.eot);
+    src: local('Material Icons'), local('MaterialIcons-Regular'), url(./material-icons/MaterialIcons-Regular.woff2) format('woff2'), url(./material-icons/MaterialIcons-Regular.woff) format('woff'), url(./material-icons/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+li {
+    transition: 0.3s;
+}
+
+p:hover {
+    background-color: gainsboro;
+    cursor: pointer;
+}
+
+.folder > ul {
+    display: none;
+}
+
+.folder span {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.folder i {
+    color: yellow;
+}
+
+.file i {
+    color: gray;
+}
+
+span {
+    font-style: italic;
+}
+
+.open > ul {
+    display: block;
+}
+
+.open > span {
+    display: block;
+}
